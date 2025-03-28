@@ -1,0 +1,45 @@
+<!-- A combinator shows you relationship b/w combining multiple css selectors
+ > 4 CSS combinators;
+ 1. Space(" "): Descendant Selector
+ 2. Greater than(>): Child Selector
+ 3. Plus(+): Adjacent Sibling
+ 4. Tilde(~): General Sibling
+-->
+
+<!-- Descendant selector is used to match all the elements which are descenedents of a specified element. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <link rel="stylesheet" href="combinators.css">
+ </head>
+ <body>
+    <div class="descend">
+        <h2>Heading</h2>
+        <h3>Topic 1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium inventore debitis molestias cupiditate illum explicabo similique, nisi ea aut deserunt? Provident nostrum, enim autem eaque tempore fuga iste nemo sapiente quidem quo laboriosam quasi in voluptates aliquam porro quaerat delectus non mollitia maiores. Id odit error fuga totam accusantium voluptatem harum ex itaque beatae expedita facere nesciunt voluptas, rem quas?</p>
+        <br />
+        <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis tempora numquam dolorem. In perspiciatis, odio saepe dolor quis similique tempore labore optio asperiores sequi vero architecto alias, quod doloribus rerum enim maiores explicabo minima odit reiciendis non? Beatae, dignissimos.</p>
+        </section>
+    </div>
+<hr />
+    <div>
+        <h2>Heading 2</h2>
+        <h3>Topic 2</h3>
+        <p class="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos numquam illo deleniti, minima excepturi voluptatibus consectetur suscipit qui fuga a facere, repellendus repudiandae dolorem odio molestiae similique tempora? Harum mollitia sunt odit id autem commodi sapiente exercitationem itaque, recusandae incidunt asperiores aliquam? Fugiat in pariatur facere doloribus voluptatem laudantium ullam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet aperiam atque commodi enim neque quibusdam tenetur, maxime repudiandae ad. Dolore praesentium aspernatur sequi corrupti doloribus molestiae aliquid adipisci vero.
+        </p>
+        <p>
+            <ul>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Google</a></li>
+                <li><a href="http://" target="_top" rel="noopener noreferrer">Bing</a></li>
+                <li><a href="http://yandex.com" rel="noopener noreferrer">Yandex</a></li>
+                
+            </ul>
+        </p>
+    </div>
+ </body>
+ </html>

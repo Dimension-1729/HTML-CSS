@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: #FFF;
+    margin: 0;
+    padding: 3em;
+}
+div{
+    margin-left: 500px;
+    margin-top: 300px;
+}
+.editable{
+    border: 2px solid skyblue;
+    padding: 15px;
+    background-color: aquamarine;
+    color: #111;
+}
+input:read-only{
+    background-color: aqua;
+
+}
+input:read-write{
+    background-color: orangered;
+}
+/* This will not apply to the label which has value as that placeholder becomes inactive as value is filled. Only works unitl the placeholder default text is visible or say in active state. */
+input:placeholder-shown{
+    border: 1.9px solid dodgerblue;
+    border-radius: 50px;
+}

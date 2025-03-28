@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+div{
+    border: 1px solid dodgerblue;
+    border-radius: 80px;
+    text-align: center;
+    margin-top: 300px;
+    padding: 50px;
+    box-shadow: 0 0 15px 15px rgb(250, 252, 128) inset;
+}
+.forms >input:focus{
+    background-color: dodgerblue;
+    color: rgb(176, 255, 30);
+}
+label{
+    font-weight: 700;
+    border: 1px solid white;
+    margin: 3px;
+    padding: 3px;
+}
+div > label,input,button {
+    margin-top: 10px;
+}

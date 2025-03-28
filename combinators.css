@@ -1,0 +1,38 @@
+
+body{
+    background-color: black;
+    color: #fff;
+}
+/* Only hr insdie div and all h2's will be colored. */
+div.descend h3, h2{
+    color: aqua;
+}
+/* To target direct child of an element. Direct children of given parent element. */
+div.descend > p{
+    border: 3px solid lightgreen;
+}
+/* Adjacent selector: Directly after another element, it does not work if the element is nested, only works if the sibling element should have the same parent element.*/
+section + p{
+    border: 3px solid yellow;
+   
+}
+/* The above e.g is not working because p is inside section and not after it */
+h2 + h3{
+    display: inline;
+    border: 3px solid lightgray;
+}
+/* Attribute selector allows you to selec the elements based on attributes and values i.e value of the attribute to select the element. Class & id allow you to select based on single attribute type.  */
+a[target="_blank"]{
+    color: rgb(65, 136, 241);
+}
+a[target="_top"]{
+    color: rgb(255, 116, 116);
+}
+/* This is case sensitive since it is inside "" */
+a[href="http://yandex.com"]{
+    color: rgb(109, 248, 104);
+}
+/* Similar to class selector but with attributes */
+p[class=test]{
+    border: 5px dotted brown;
+}

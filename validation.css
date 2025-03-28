@@ -1,0 +1,26 @@
+body{
+    background-color: #111;
+    color: #ccc;
+}
+div{
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px;
+    margin-top: 300px;
+    letter-spacing: 1.5px;
+    
+}
+div > input{
+    margin-top: 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-style: italic;
+    border: 2px solid dodgerblue;
+    display: inline;
+    padding: 5px;
+    border-radius: 15px;
+}
+input:invalid{
+    background-color: rgb(255, 160, 160);
+}

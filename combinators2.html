@@ -1,0 +1,42 @@
+<!-- Attribute Selector ^ ; it will select the attributes whose values is prefixed by a given value. -->
+<!-- $ sign in attribute selector is used for suffix value i.e whose value ends with a given value and is case-sensitive -->
+<!-- "*" sign will select the attribute whose value contains at least one occurrence of given value, you can also ignore the case [small or capital] -->
+<!-- Attribute hypenated value, pipe(|) sign in attribute selector will select the attributes with exactly same value or the value followed by the hyphen(-) sign. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <link rel="stylesheet" href="combinators2.css">
+ </head>
+ <body>
+    <div>
+        <h2>Heading 2</h2>
+        <h3>Topic 2</h3>
+        <p class="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos numquam illo deleniti, minima excepturi voluptatibus consectetur suscipit qui fuga a facere, repellendus repudiandae dolorem odio molestiae similique tempora? Harum mollitia sunt odit id autem commodi sapiente exercitationem itaque, recusandae incidunt asperiores aliquam? Fugiat in pariatur facere doloribus voluptatem laudantium ullam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet aperiam atque commodi enim neque quibusdam tenetur, maxime repudiandae ad. Dolore praesentium aspernatur sequi corrupti doloribus molestiae aliquid adipisci vero.
+        </p>
+        <p>
+            <img src="./caret.jpg" alt="">
+            <ul>
+                <li class="testing"><a href="ghi.com" target="_blank" rel="noopener noreferrer" name="google">Google</a></li>
+                <li class="test"><a href="google.com" target="_top" rel="noopener noreferrer">Bing</a></li> <br />
+                <img src="./newsel.jpg" alt="">
+                <li class="-test"><a href="Yahoo.com" target="_top" rel="noopener noreferrer" name="yahoo">yahoo</a></li> <br />
+                <li class="testx"><a href="benq.com" target="_top" rel="noopener noreferrer" name="yahoo">benq</a></li> <br />
+                <p>All classes ending with n will be selected.</p>
+                <img src="./suffix.jpg" alt="">
+                <li class="testStyle"><a href="http://yandex.co6" rel="noopener noreferrer">Yandex</a></li>
+                
+            </ul>
+        </p>
+    </div>
+
+
+ </body>
+ </html>
+
+
+
+ [class|="style"]

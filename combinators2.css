@@ -1,0 +1,15 @@
+a[href^="g"]{
+    border: 3px solid blue;
+}
+a[href$="6"]{
+    border: 3px solid pink;
+}
+a[name*="y" i]{
+    color: yellowgreen;
+    font-size: larger;
+}
+/* We have to directly give class name no use of element */
+[class|="test"]{
+    font-style: italic;
+    border: 2px solid black;
+}

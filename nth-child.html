@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child() Selector</title>
+    <style>
+        body{
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            text-align: center;
+            margin-top: 350px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+        .grid-items{
+            background-color: dodgerblue;
+            padding: 5px;
+            margin: 3px;
+            
+        }
+        /* n always start from zero */
+        .grid-items:nth-child(2n+1){
+            background-color: lime;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items">Apple</div>
+        <div class="grid-items">Pear </div>
+        <div class="grid-items">Mango</div>
+        <div class="grid-items">Grapes</div>
+        <div class="grid-items">Guava</div>
+        <div class="grid-items">Kiwi</div>
+        <div class="grid-items">Strawberry</div>
+        <div class="grid-items">Banana</div>
+        <div class="grid-items">Watermelom</div>
+        <div class="grid-items">Papaya</div>
+        <div class="grid-items">Orange</div>
+        <div class="grid-items">Plum</div>
+        <div class="grid-items">Apricot</div>
+        <div class="grid-items">Kinnu</div>
+    </div>
+</body>
+</html>

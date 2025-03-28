@@ -1,0 +1,25 @@
+body{
+    background-color: #111;
+    color: #fff;
+    
+}
+.items{
+    display: grid;
+    margin: 15px;
+    padding: 15px;
+
+}
+tr > td{
+    margin: 3px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+   
+}
+th{
+    border: 5px solid white;
+    color: yellow;
+}
+table + tr:nth-child(2n){
+    background-color: aquamarine;
+}

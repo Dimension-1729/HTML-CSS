@@ -1,0 +1,49 @@
+<!-- When you want to deal with special states of an element, you have to use pseudo classes.
+ Format:-
+ selector:state{}
+ .classname:hover{} -->
+
+ <!-- Linguistic Pseudo Classes will help you select elements based on language or script direction
+  :dir() and :lang() -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="pseudo-class.css">
+  </head>
+  <body>
+    <div dir="rtl" lang="fr">
+        This is right to left.
+    </div>
+    <div dir="ltr" lang="sp">
+        This is left to right.
+    </div>
+<br /><hr />
+    <!-- Location Pseudo Classes are used when there are hyperlinks involved in the document. 
+     :any-link = will select the hyperlinks whether they are visited or not, it will match all the anchor tags which have "href" attribute in them.
+     :link = will select all acnhor tags which are not yet visited
+     :visited = those links which are alredy been visited
+     :target = is used to target the unique element - which has the matching is as the URL.
+     -->
+
+     <div>
+        <h2>Links To be selected</h2>
+        <a href="link1.html">Link1</a><br />
+        <a href="link2.html">Link1</a><br />
+        <a href="#para1">Target 1 Para</a><br />
+        <a href="#para2">Target 2 Para</a><br />
+        <a href="#para3">Target 3 Para</a><br />
+        <a href="#para4">Target 4 Para</a><br />
+       <a >not a link</a>
+     </div>
+     <section>
+        <h2>Paragraphs to be targeted</h2>
+        <p id="para1">This is Paragraph 1</p>
+        <p id="para2">This is <span class="new">Paragraph 2</span></p>
+        <p id="para3">This is <span class="new1">Paragraph 3</span></p>
+        <p id="para4">This is Paragraph 4</p>
+     </section>
+  </body>
+  </html>

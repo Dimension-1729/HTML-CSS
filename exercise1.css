@@ -1,0 +1,11 @@
+div.heading + a > p{
+    border: 3px solid red;
+}
+/* or div.heading1 > a[href^="c"][target~="_blank"]  "~" is used to ignore white spaces in css */
+div.heading1 a[target="_blank"]{
+    border: 3px solid blue;
+}
+a[href^="b"][href$=".org"]{
+    border: 5px solid aquamarine;
+    padding: 10px;
+}

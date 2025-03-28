@@ -1,0 +1,24 @@
+<!-- Pattern attribute is used for giving regular expressions, which should match the value entered in form [RegEx] -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Tools</title>
+    <link rel="stylesheet" href="validation.css">
+ </head>
+ <body>
+    <div>
+        <h1>Employee Details</h1> <br />
+        <label>Name</label>
+        <input type="text" required pattern="[A-Z][a-z]{1,40}"> <br />
+        <label>Mobile</label>
+        <input type="text" pattern="[0-9]{10}" required><br />
+        <label>Email</label>
+        <input type="email" required><br />
+        <label>Salary</label>
+        <input type="text"><br />
+        <button type="submit">Submit</button>
+    </div>
+ </body>
+ </html>
