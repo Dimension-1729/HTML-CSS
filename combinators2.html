@@ -1,7 +1,9 @@
 <!-- Attribute Selector ^ ; it will select the attributes whose values is prefixed or start by a given value. -->
 <!-- $ sign in attribute selector is used for suffix value i.e whose value ends with a given value and is case-sensitive -->
 <!-- "*" sign will select the attribute whose value contains at least one occurrence of given value, you can also ignore the case [small or capital] -->
-<!-- Attribute hypenated value, pipe(|) sign in attribute selector will select the attributes with exactly same value or the value followed by the hyphen(-) sign. -->
+<!-- Attribute hypenated value, pipe(|) sign in attribute selector will select the attributes with exactly same value or the value followed by the hyphen(-) sign i.e is after the matching word, if it comes before it will ignore.
+e.g; test, test-, test, test-1 these all will be selected but not this my-test.
+-->
  <!DOCTYPE html>
  <html lang="en">
  <head>

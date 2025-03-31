@@ -1,14 +1,17 @@
+/* Starts with */
 a[href^="g"]{
     border: 3px solid blue;
 }
+/* ends with */
 a[href$="6"]{
     border: 3px solid pink;
 }
+/* "i" to ignore case-sensitivity */
 a[name*="y" i]{
     color: yellowgreen;
     font-size: larger;
 }
-/* We have to directly give class name no use of element */
+/* We have to directly give class name no use of element if we are using attribute to specify a class.*/
 [class|="test"]{
     font-style: italic;
     border: 2px solid black;
