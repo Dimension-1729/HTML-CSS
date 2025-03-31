@@ -13,3 +13,7 @@ a[name*="y" i]{
     font-style: italic;
     border: 2px solid black;
 }
+/* ~ sign will ignore white spaces, ^ suffix value,starting with h, [] for attribute selector, > for selecting child elements */
+div ul li a[href^="h"][href$="5"][target~="_parent"]{
+    border: 3px solid dodgerblue;
+}

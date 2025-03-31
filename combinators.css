@@ -36,3 +36,9 @@ a[href="http://yandex.com"]{
 p[class=test]{
     border: 5px dotted brown;
 }
+/* Targetting a particular span inside first div using universal selector
+*{} = Universal selector [All html elements would be styled]
+*/
+* .descend span{
+    color: dodgerblue;
+}

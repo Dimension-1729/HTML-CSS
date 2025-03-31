@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing Specificity Rules</title>
+    <link rel="stylesheet" href="specificity.css">
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum fuga eligendi, animi in, vero eum ea voluptatem aspernatur libero molestiae error ut. Laborum repudiandae officia quasi inventore voluptate ex sunt accusantium, tenetur ut, voluptatibus possimus, natus molestiae ipsum rerum harum.</p>
+        <br /> <hr />
+        <p class="default">
+            animi in, vero eum ea voluptatem aspernatur libero molestiae error ut. Laborum repudiandae officia quasi inventore voluptate ex sunt accusantium, tenetur ut, voluptatibus possimus, natus molestia
+        </p>
+        <br /> <hr />
+        <!-- Depicting Order of Specificty -->
+        <p class="default" id="benq" style="border: 3px solid yellow;">
+            animi in, vero eum ea voluptatem aspernatur libero molestiae error ut. Laborum repudiandae officia quasi inventore voluptate ex sunt accusantium, tenetur ut, voluptatibus possimus, natus molestia
+        </p>
+        <br /> <hr />
+        <p class="new" id="benq">
+            animi in, vero eum ea voluptatem aspernatur libero molestiae error ut. Laborum repudiandae officia quasi inventore voluptate ex sunt accusantium, tenetur ut, voluptatibus possimus, natus molestia
+        </p>
+
+    </div>
+</body>
+</html>

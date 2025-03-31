@@ -1,4 +1,4 @@
-<!-- Attribute Selector ^ ; it will select the attributes whose values is prefixed by a given value. -->
+<!-- Attribute Selector ^ ; it will select the attributes whose values is prefixed or start by a given value. -->
 <!-- $ sign in attribute selector is used for suffix value i.e whose value ends with a given value and is case-sensitive -->
 <!-- "*" sign will select the attribute whose value contains at least one occurrence of given value, you can also ignore the case [small or capital] -->
 <!-- Attribute hypenated value, pipe(|) sign in attribute selector will select the attributes with exactly same value or the value followed by the hyphen(-) sign. -->
@@ -30,13 +30,16 @@
                 <li class="testStyle"><a href="http://yandex.co6" rel="noopener noreferrer">Yandex</a></li>
                 
             </ul>
+            <br />
+            <ul class="newclass">
+                <li><a href="http://yandex.co5" target="              _parent" rel="noopener noreferrer">Yandex</a></li>
+                
+                <li><a href="http://yandex.co3" target="_parent" rel="noopener noreferrer">Yandex</a></li>
+                
+            </ul>
         </p>
     </div>
 
 
  </body>
  </html>
-
-
-
- [class|="style"]
