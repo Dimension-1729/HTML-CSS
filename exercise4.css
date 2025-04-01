@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+div{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    border: 2px solid cyan;
+    font-size: 1.2em;
+    border-radius: 15px;
+    font-weight: 600;
+    
+}
+
+th{
+    font-weight: 800;
+    color: goldenrod;
+    background-color: pink;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+td{
+    margin: 3px;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+}
+
+tr:nth-child(odd){
+    background-color: crimson;
+    font-style: italic;
+    color: crimson;
+}

@@ -1,0 +1,35 @@
+#second::first-letter{
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 7px;
+    color: brown;
+}
+
+/* Works only on block level elements i.e it will not work with span etc unless specified as block */
+
+/* first-line >>>> first-letter when both are applied to same element, order of specificity */
+
+.first::first-line{
+    color: dodgerblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 400;
+    padding: 3px;
+
+}
+
+/*They don't exist inside the dom, their are separately added before p and is a different element.*/
+#third::before{
+    content: "New content added";
+    border: 2px solid black;
+    
+}
+
+/* without content these pseudo-elements are useless, we have to leave it blank in order to use them. */
+.first::after{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: aqua;
+       
+}

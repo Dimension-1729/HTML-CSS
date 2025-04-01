@@ -1,0 +1,26 @@
+body{
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.grid-items{
+    background-color: dodgerblue;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    
+}
+.grid-items:nth-child(n):nth-last-child(n+13){
+    background-color: pink;
+}
+.grid-items:nth-last-child(odd):nth-child(n+12){
+    background-color: pink;
+}

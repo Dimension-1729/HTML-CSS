@@ -20,6 +20,6 @@ th{
     border: 5px solid white;
     color: yellow;
 }
-table + tr:nth-child(2n){
+table + tr:nth-child(2n+1){
     background-color: aquamarine;
 }

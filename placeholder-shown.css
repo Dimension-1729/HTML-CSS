@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+div input:placeholder-shown{
+    background-color: goldenrod;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    width: 50%;
+}
+
+
+label input{
+    display: flex;
+}
+
+div{
+    border: 2px solid dodgerblue;
+    margin: 5px 10px;
+    padding: 10px;
+}

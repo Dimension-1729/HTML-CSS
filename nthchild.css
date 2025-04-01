@@ -1,0 +1,36 @@
+body{
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.grid-items{
+    background-color: dodgerblue;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    
+}
+/* n always start from zero
+.grid-items:nth-child(2n+1){
+    background-color: lime;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+/* This will start from 9th position and go back every 2n
+.grid-items:nth-child(-2n+9){
+    background-color: crimson;
+} */
+
+/* To start from a given index and to end at a given index */
+.grid-items:nth-child(n+3):nth-last-child(n+5){
+    background-color: aqua;
+}
