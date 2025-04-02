@@ -1,0 +1,44 @@
+<!-- It's the distance between the lines of text, if you want to give some amount of space to above and below of line.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-Height</title>
+    <style>
+        /* It gets affected by font-size e.g 
+        line-heightxfont-size to get the final value */
+        p{
+            line-height: 1.7; /*Default way of giving value is unitless line height because lenght or percentage value assigned to line-height may leave some extra spaces bw the lines*/
+            font-size: 20;
+            /*so in here there will be 1.7 x 20 =  34px gap between lines*/
+            font-style: oblique;
+        }
+        .text-transform{
+            text-transform: lowercase;
+        }
+        .capital{
+            color: burlywood;
+            font-size: x-large;
+            font-style: oblique;
+            text-transform: none;       /*This property will be overwritten by capitalize*/
+            text-transform: capitalize;     /*this converts first letter to capital*/
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <h2 class="capital">Text Transform Property</h2>
+    <!-- Capitalize will not affect the letters which are coming after a numeric value -->
+    <span class="capital">December a12th 2021</span>
+    <p class="text-transform">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis corrupti non atque recusandae fugit eos repudiandae reiciendis eum, architecto quis saepe cupiditate alias deleniti ipsam nulla accusantium perspiciatis iusto eligendi cumque culpa quos assumenda? Delectus vel ad eaque quam labore praesentium illo, ullam amet inventore in laboriosam esse, numquam quasi, corrupti et reprehenderit. Quibusdam officia officiis velit quis aliquam dolore reprehenderit impedit, saepe architecto magnam odit quidem id expedita perspiciatis cupiditate culpa inventore possimus optio sed libero sequi? Explicabo suscipit quidem aperiam ducimus velit minus optio sint accusamus sed id a qui quo modi quia magni recusandae, possimus iure natus?</p>
+    <br />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cum. Ratione, possimus qui dolorem dignissimos corporis sunt aperiam est obcaecati modi pariatur sequi officiis sapiente dolores. Placeat officia quo ullam, accusamus natus reprehenderit voluptates quidem doloribus, excepturi impedit aspernatur perspiciatis. Asperiores, culpa necessitatibus, quibusdam soluta nam labore tempore nobis commodi voluptatem eligendi velit voluptate natus. Velit dolores consectetur accusantium, ab laboriosam delectus repudiandae commodi eveniet temporibus iste voluptatibus quia, facilis hic exercitationem quod nihil? Architecto magnam velit commodi, pariatur nisi, libero minima debitis, tempore facere sit quos laboriosam odio sed! Accusamus, laudantium eius! Modi eligendi ullam dignissimos doloribus eius veniam veritatis perspiciatis, deleniti libero quasi minus maiores, dolores, assumenda quaerat error optio consequatur? Temporibus ex aperiam ut! Voluptate, ullam voluptatem tenetur quo deserunt voluptatibus officia placeat impedit corporis voluptatum autem? Accusamus iure suscipit, doloribus veniam assumenda quia! Repellendus aut cum voluptatibus! Quia neque nesciunt est voluptate, nobis rem dolore exercitationem cupiditate deleniti suscipit. Aperiam voluptatem id placeat aspernatur at officia amet impedit natus laborum vitae explicabo ullam totam ea et perferendis incidunt eius, neque dolorem autem, cumque quo. Deserunt reprehenderit cum asperiores ullam voluptates placeat iure neque vero, ducimus quos, voluptatum blanditiis hic temporibus exercitationem error? Similique omnis hic tempora.</p>
+
+    <br />
+    <h2>Font-style</h2>
+    <img src="./cursive.jpg" alt="" srcset="">
+
+   
+ </body>
+ </html>
