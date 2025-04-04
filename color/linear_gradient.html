@@ -1,0 +1,56 @@
+<!-- Gradient is typically one color that fades into another.
+ Giving gradient-color is important than giving images as it will faster to load.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background: linear-gradient(135deg, orange 60%, cyan);
+            color: #fff;
+        }
+
+        div{
+            width: 250px;
+            height: 250px;
+            padding: 150px;
+            /* 25%, 75% are color stop positions they tell the browser where to stop the gradient transition and are used to render smooth color transitions. */
+            background: linear-gradient(to bottom left,#e66465 25%, #9198e5 75%);
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            border-radius: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p>linear-gradient(): allows you to give a linear gradient to any element, the gradient you apply will bend from one color to another like this</p>
+        <br /> 
+        <img src="../Assets/gradient.jpg" alt="">
+        <br />
+
+        Gradient-line
+        <br />
+        <img src="../Assets/gradient_line.jpg" alt="">
+        <br />
+        Linear gradient Function defined
+        <br />
+        <img src="../Assets/lineargradient.jpg" alt="">
+        <br />
+        How to apply gradient to specific direction
+        <br />
+        <img src="../Assets/usecase.jpg" alt="">
+        <br /> <hr>
+        <h2>To show linear gradient</h2>
+        <div>
+
+        </div>
+    
+</body>
+</html>
