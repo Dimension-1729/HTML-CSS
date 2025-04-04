@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Decoration</title>
+    <style>
+        body{
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        p{
+            margin-top: 10em;
+            text-decoration: overline underline wavy dodgerblue 4px;
+        }
+        /* text-underline offset:- gives space between the underline and the line */
+        #offset{
+            text-decoration: underline solid crimson 2px;
+            text-underline-offset: 10px;    /* is not part of text-decoration shorthand and not applies on overline or line-through*/
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem ad nemo.
+    <br />
+    <p id="offset">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, ipsam?</p>
+    <h3>Right format to give Text-Decoration attributes</h3>
+    <img src="./textdecoration.png" alt="">
+</body>
+</html>  
