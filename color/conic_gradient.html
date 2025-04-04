@@ -1,0 +1,50 @@
+<!-- It forms the radiant at the center of the element. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic-Gradient</title>
+    <style>
+        div{
+            padding: 150px;
+            /* Not suggested by visual studio code */
+            /* The starting angle and the centre coordinates can be shifted */
+            background: 
+            conic-gradient( from 60deg at 40% 30%,
+                blue 20%, red 60%, blue 100%
+            );
+        }
+        article{
+            padding: 150px;
+            margin-top: 100px;
+            /* 20,60,100 color stop points used to give conical like shape */
+            background: 
+            conic-gradient(
+                dodgerblue 20%,blue 60%, dodgerblue 100%
+            );
+            border-radius: 500px;
+            width: 350px;
+            height: 350px;
+        }
+        span{
+            padding: 150px;
+            margin-top: 3000px;
+            /* 0.4 turn means the gradient will be applied in 144 degress rotation*/
+            background: 
+            conic-gradient(
+                dodgerblue 20%,blue 60%, dodgerblue 100%
+            );
+            border-radius: 500px;
+            width: 350px;
+            height: 350px;
+
+        }
+    </style>
+ </head>
+ <body>
+    <div></div>
+    <article></article>
+    <span></span>
+ </body>
+ </html>

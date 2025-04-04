@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        div{
+            padding: 150px;
+            /* With closest-side, the whole gradient will be inside the div, position always happen from the center */
+            /*Other options are circle/eclipse :: closest-side, closest-corner, farthest-side, farthest-corner */
+            background: radial-gradient(circle closest-side, rgb(58, 250, 131) 20%, yellow);
+            width: 150px;
+            height: 150px;
+            border-radius: 500px;
+            position: absolute;
+            margin-left: auto;
+            margin-left: auto;
+            left: 0;
+            right: 100px;
+            /* to give position to any gradient */
+        }
+        article{
+            margin-top: 450px;
+            padding: 150px;
+            /* the center point will be at left other options are;
+            at top right
+            at bottom left
+            at bottom right
+            at top
+            at right
+            at bottom
+            at left
+            at center*/
+            background: radial-gradient(circle at top left, rgb(58, 250, 131) 20%, yellow);
+            width: 150px;
+            height: 150px;
+            border-radius: 500px;
+            position: absolute;
+            margin-left: auto;
+            margin-left: auto;
+            left: 0;
+            right: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <br /><hr />
+    <article></article>
+</body>
+</html>
