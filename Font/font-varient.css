@@ -1,0 +1,12 @@
+p{
+    font-variant: small-caps;
+}
+span{
+    font-variant-caps: unicase;
+}
+body{
+    background-color: #111;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
