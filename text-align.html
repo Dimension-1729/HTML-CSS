@@ -1,0 +1,30 @@
+<!-- Justify will stretch the text until it fills the width of web page or container, it also make sure each line has equal width-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-align</title>
+    <style>
+        p{
+            text-align: end;
+            /* Nothing will happen while using ltr on end */
+            direction: ltr;
+        }
+        span{
+            /* We need to use display and then direction overrides the span text-align property */
+            display: block;
+            text-align: start;
+            direction: rtl;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Text-align Properties</h1>
+    <img src="./text-align.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque blanditiis velit magni cum, nam commodi, non a ut, rerum aliquid! Aspernatur minus doloribus voluptas aliquam. Possimus harum incidunt cum officiis beatae sequi id ab at. Qui dolor ipsum nesciunt molestiae dolores quis dolorem deserunt asperiores pariatur, itaque quisquam repellat voluptatum doloremque non repudiandae placeat accusantium? Aperiam temporibus veritatis blanditiis suscipit. Illum doloribus amet qui harum, mollitia vel dolorem voluptas ducimus maxime culpa voluptatem reiciendis rerum? Dolorum totam exercitationem, nisi saepe minima labore voluptatibus repellendus nulla. Tempora itaque, quo eos reprehenderit accusantium, quod neque veniam repellendus magnam ab atque veritatis.</p>
+    <br />
+    <hr>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas esse ad enim facilis dignissimos unde ratione ducimus non quisquam, aut totam dolores perspiciatis odio sint nihil laborum obcaecati veniam ipsa ab, quod impedit. Quam, ipsum reiciendis. Numquam nisi quaerat, rem pariatur maxime ipsum deserunt odio sapiente asperiores doloribus ratione molestias iure deleniti nesciunt? Obcaecati ipsam laboriosam qui aperiam quasi quia quidem, perspiciatis consequatur excepturi officiis, nesciunt dolores. Quia ullam libero similique cumque, natus est ipsa quasi. Voluptas, expedita quibusdam, explicabo est voluptatum laborum nisi harum id labore, qui fugit in aut. Ipsa id soluta reiciendis? Maiores error necessitatibus aliquid.</span>
+ </body>
+ </html>
