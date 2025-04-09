@@ -1,0 +1,45 @@
+<!--
+Css treats every element as a box when it comes to apllying css rules 
+content>padding>border>margin
+Every element has border you just have to switch it on or off, by default it's rectangular in shape 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model Basics</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            border-style: double;
+            border-width: 10px;
+            border-color: goldenrod;
+            margin-top: 100px;
+            border-radius: 2em;
+            padding: 3em;
+            margin: 50px;
+            width: 350px
+        }
+        /* Also padding can be given like 
+        padding-right, padding-top.....so on; short hand is padding trbl 
+        If 3 values padding top right-left bottom
+        If 2 values padding top-bottom right-left*/
+        h2{
+            border: 5px groove dodgerblue;
+            display: inline-block;
+            padding: 6%; /*Padding is being calculated by width * padding, is inherited, % is relative*/
+            margin: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>How cool is CSS</h2>
+            <p>Yep, not as much cool as JavaScript.</p>
+    </div>
+</body>
+</html>
