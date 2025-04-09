@@ -1,0 +1,47 @@
+<!-- em also called ephemeral unit, used for giving font size and styling other html elements. It is a relative unit i.e it's value will be depend on the inherit properties from the parent element.
+ 
+You can only affect parent element font size, and not other parent properties like padding, margin, width etc
+
+1em = 16px
+
+Compounding effect.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em unit</title>
+    <style>
+        div{
+            font-size: 2.5em;
+        }
+        p{
+            font-size: 1.3em;
+        }
+        .subpara{
+            font-size: 2em;
+        }
+        .rem{
+            font-size: 80px; /* to give a fallback value in case browser doesn't support it  */
+            font-size: 5rem;
+        }
+
+        /* It will keep inheriting parent properties unless we use rem */
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quod accusamus recusandae, ea ullam inventore nisi officia non eaque. Blanditiis, magni ut. Iure mollitia, quia quo exercitationem, rem fuga optio dicta nihil officia nemo est architecto in culpa unde at!
+            <p class="subpara">
+                This is compounding!
+            </p>
+        </p>
+    </div>
+
+<!-- rem unit is based upon the font size value of root element i.e <html> itself i.e why rem root-em 
+default font size is 16 px-->
+
+<br /> <hr />
+<p class="rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus autem voluptatum quae molestias. Quidem perferendis placeat laborum fugit voluptatem!</p>
+</body>
+</html>
