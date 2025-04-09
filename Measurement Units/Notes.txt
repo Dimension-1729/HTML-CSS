@@ -4,3 +4,8 @@ cm is used for properties which deal with shapes and sizes or spacing of element
  mm used when content is to be displayed on any printing media platform, as length size expressed with this unit is very precise
  1mm = 1/10 = 0.1cm = 3.78px
 
+inch : Also for print output.
+1 inch = 96px = 2.54cm
+
+pica(pc) : is also another typography unit for printing content on a paper and is 1/6th of an inch
+1pc = 16 px
