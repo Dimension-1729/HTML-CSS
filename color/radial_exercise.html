@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            border-radius: 500px;
+            width: 250px;
+            height: 250px;
+            margin-left: 200px;
+            /* 50% tells the horizontal position and 0 tells the vertical position */
+            background: radial-gradient(circle at 50% 0, red, #f000 60%),
+            radial-gradient(circle at 5% 75%, rgb(32, 248, 50), #f000 60%),
+            radial-gradient(circle at 95% 75%, rgb(57, 23, 251), #f000 60%);
+            /* #f000 is opacity 0*/
+            
+        }
+    </style>
+</head> 
+<body>
+    <h1>Using Radial Gradient to create a pattern</h1>
+    <img src="../Assets/radial.png" alt="">
+    <br /><hr />
+    <div></div>
+</body>
+</html>   

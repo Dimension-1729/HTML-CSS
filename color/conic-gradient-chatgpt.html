@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient Effects</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        .gradient-text {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: conic-gradient(
+                red, yellow, green, cyan, blue, magenta, red
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-box {
+            width: 400px;
+            height: 200px;
+            background: conic-gradient(
+                green 0deg 90deg,
+                purple 90deg 180deg,
+                red 180deg 270deg,
+                yellow 270deg 360deg
+            );
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="gradient-text">Conic Gradient</h1>
+    <div class="gradient-box"></div>
+
+</body>
+</html>
