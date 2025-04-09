@@ -1,0 +1,41 @@
+<!-- 
+ ch unit lets you limit the width of text elements by character count, considering the space taken by character 0, it measures against zeros..
+ i.e the space taken by x zeroes will be used to display in place of characters or in other words equivalent length of 50 zeroes for this font
+
+ Usage in development:-
+ Declare a parent element with some desired width & then you can assign width in "ch" to inner text elements
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character unit</title>
+    <style>
+        .mobile{
+            padding: 2px;
+            width: 10ch;
+            margin: 2px 5px;
+            border-radius: 5px;
+            border-color: goldenrod;
+        }
+        /* It is taking 17 characters space based on equivalent value of 15 zeroes */
+        .name{
+            padding: 2px;
+            width: 15ch;
+            margin: 2px 5px;
+            border-radius: 5px;
+            
+        }
+    </style>
+
+ </head>
+ <body>
+    Mobile No.
+    <input class="mobile"  type="text">
+    <br />
+    Name
+    <input class="name" type="text">
+ </body>
+ </html>

@@ -1,0 +1,27 @@
+<!-- It's similar to em & rem, as ex unit also relies on current font and its size. 
+ It is highly dependent on font-family i.e being used, if no font-family is defined it will load default font-family which is "Times New Roman" and it will render different size units based on the ratio
+ Rerely used in front-end dev
+ 
+ 1ex = 6px-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+    <style>
+        .pixel{
+            font-size: 30px;
+        }
+        /* Even though we used same measurement but as it's based on font-family the sizes differ */
+        .ex{
+            font-size: 5ex;
+        }
+    </style>
+ </head>
+ <body>
+    <p class="pixel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, molestiae nostrum error qui quo dolore sit reiciendis quam enim. Consectetur!</p>
+    <p class="ex">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, molestiae nostrum error qui quo dolore sit reiciendis quam enim. Consectetur!</p>
+ </body>
+ </html>

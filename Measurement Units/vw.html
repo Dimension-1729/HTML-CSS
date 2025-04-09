@@ -1,0 +1,48 @@
+<!--
+Viewport width works just like percentage units.
+
+Viewport is defined as the user's visible area, it varies with the device,
+they're used to cusctomize the layout that fits well on the screen.
+
+There are 4 viewport based units;
+1. vw
+2. vh
+3. vmin
+4. vmax     
+
+Important:- "vw" removes the dependecny of any parent element and allows sizing based on the viewport size of the browser. In other words, "%" length is relative to parent element width and "vw" width is relative to browser window width
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>percentage</title>
+   <style>
+       .percentage{
+           border: 5px solid goldenrod;
+           width: 80%;
+           padding: 5%;
+           
+       }
+/* It's inheriting from parent element and font-size is being multiplied. */
+       .viewport{
+           padding: 5%;
+           border: 5px solid dodgerblue;
+           /* It is extending because width is relative to browsed window width here. */
+           width: 80vw; 
+
+       }
+   </style>
+</head>
+<body>
+   <div class="percentage">
+    <div class="viewport">
+
+    </div>
+   </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- 
+ You can give % to create flexible images so that image will aadjust with browser screen 
+ fluid layouts [layouts of the page re-sizes automatically as the window size is changed i.e adjust to user screen size, percentage based rather than fixed pixel width
+ 
+ % shows relevancy with parent element
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid-Layouts</title>
+    <style>
+        .fixed-layout{
+            border: 3px solid goldenrod;
+            padding: 30px;
+            width: 350px;
+        }
+/* Upon resizing, the fluid layout will adjust itself as per user screen. */
+        .fluid-layout{
+            border: 3px solid dodgerblue;
+            width: 37%;
+            padding: 3.5%;
+        }
+/* border-width doesn't accept this scaling */
+    </style>
+ </head>
+ <body>
+    <div class="fixed-layout"></div>
+    <br />
+    <div class="fluid-layout"></div>
+ </body>
+ </html>

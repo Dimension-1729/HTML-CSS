@@ -1,0 +1,34 @@
+<!-- 
+ font-size defined in percentage is relative to its parent element size whether absolute or relative 
+ font-size: 100% = 16px
+ It is very handy when it comes to positioning the elements on page, creating fluid layouts [layouts of the page re-sizes automatically as the window size is changed i.e adjust to user screen size, percentage based rather than fixed pixel width].
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percentage</title>
+    <style>
+        div{
+            font-size: 150%;
+            border: 5px solid goldenrod;
+            width: 350px;
+            
+        }
+/* It's inheriting from parent element and font-size is being multiplied. */
+        p{
+            padding: 5%;
+            font-size: 125%;
+            border: 5px solid dodgerblue;
+            width: 80%;  /*Width is multiplied by 350px x 0.8 = 280px resultant width*/
+        }
+    </style>
+ </head>
+ <body>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio esse iusto repellat nam similique facere porro voluptates vero sunt accusamus, illum a hic culpa doloribus excepturi possimus enim expedita odio alias eius temporibus commodi assumenda mollitia. Id ex quaerat expedita doloribus accusamus nulla nihil error sapiente saepe eius fuga ipsa beatae recusandae voluptates nobis iure tenetur facilis, non assumenda. Hic reiciendis autem laboriosam. Autem optio mollitia natus magni consectetur, maiores quaerat, cupiditate molestias illo temporibus rem neque distinctio voluptatum nulla.</p>
+    </div>
+ </body>
+ </html>
