@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container-float collapsing</title>
+    <style>
+        .parent{
+            padding: 20px;
+            border: 4px solid black;
+            float: right;
+            /* overflow: hidden; */
+        }
+        .parent > div{
+            padding: 5px;
+            margin: 3px;
+            
+        }
+        .one{
+            background-color: aquamarine;
+            display: inline;
+            float: right;
+        }
+        .two{
+            background-color: seagreen;
+            display: inline;
+            float: right;
+        }
+        .three{
+            background-color: royalblue;
+            display: inline;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- The height collapses due to, because the parent division is based on inside elements. -->
+    <p>float in same direction in which child elements are floating, another way is to gove height to parent container or apply clear property to it, or add content if don't want to add content use overflow: hidden; which will clip off any content that overflows fomr the area.</p>
+    <img src="../Assets/floatdir.jpg" alt="">
+    <div class="parent">
+        <div class="one">First</div>
+        <div class="two">Second</div>
+        <div class="three">Third</div>
+        
+    </div>
+    <br />
+        <p>why it happens?</p>
+        <img src="../Assets/floatwhy.jpg" alt="">
+</body>
+</html>

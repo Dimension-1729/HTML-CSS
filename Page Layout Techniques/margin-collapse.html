@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margin-Collapse</title>
+    <title>Margin Collapse</title>
+    <style>
+        p{
+            border: 2px solid crimson;
+            margin-bottom: 50px;
+        }
+        h2{
+            border: 2px solid dodgerblue;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <img src="../Assets/paddin-margin-diff.jpg" alt="">
-    <br />
-    <p>
-        <ol>
-            <li>Margin is used to separate child elements and not create space between parent element and child element, for that padding is used.</li>
-            <li>To avoid margin collapsing we can use flexbox, grid lyaout or even padding in some cases.</li>
-            <li>Negative margins allows us to reduce the space bw two elements, element is pulled towards the other element.</li>
-            <li>Only Vertical margins are collapsed, no horizontals</li>
-            <li><img src="../Assets/collapse.jpg" alt=""></li>
-    
-        </ol>
-    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nobis quod, fugit aut excepturi inventore! Odio odit quod recusandae, amet modi omnis ab eum voluptatum quos, neque nisi eius corporis similique, soluta laudantium enim quia facere? Ex perspiciatis repellendus sit iste nihil eius quia, eveniet porro iusto, tempore voluptatum consequuntur?</p>
+    <h2>Depicting Margin Collapse, it will only be 50 px showing larger margin [whichever is greater will show the significance]</h2>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: 5px solid black;
+            text-align: center;
+            margin-top: 45px;
+            line-height: 100px;  
+            float: right;
+            /* it vertically centers the single line of text,
+            In a block element like a div, text is rendered inside a line box. Normally, that line box sits at the top of the container. But if you make the line-height equal to the height of the container (100px here), the line box becomes as tall as the div, and the text sits in the middle of it vertically.Since there's only one line of text, this works perfectly for vertical centering. */
+        }
+        .ele1{
+            background-color: dodgerblue;
+            float: left;
+        }
+        .ele2{
+            background-color: orange;
+            float: right;
+        }
+        .ele3{
+            background-color: skyblue;
+            float: left;
+            
+        }
+        p{
+            padding: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Allow element to float freely anywhere on the web-page is used to make photo gallerys, list of icons, horizontal menu etc -->
+     <div class="ele1">Wait</div>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et id corrupti ullam tenetur molestiae neque perferendis eum maxime nostrum!</p>
+     <div class="ele2">Look</div>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et id corrupti ullam tenetur molestiae neque perferendis eum maxime nostrum!</p>
+     <div class="ele3">Go</div>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et id corrupti ullam tenetur molestiae neque perferendis eum maxime nostrum!</p>
+     <br /> <hr />
+     <img src="../Assets/floa_property.jpg" alt="">
+     <img src="../Assets/float-prop-1.jpg" alt="">
+     <img src="../Assets/floa_property.jpg" alt="">
+     <img src="../Assets/clear_float.jpg" alt="">
+</body>
+</html>

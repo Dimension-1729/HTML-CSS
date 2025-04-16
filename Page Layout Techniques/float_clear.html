@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            text-align: center;
+            line-height: 100px;  
+            /* it vertically centers the single line of text,
+            In a block element like a div, text is rendered inside a line box. Normally, that line box sits at the top of the container. But if you make the line-height equal to the height of the container (100px here), the line box becomes as tall as the div, and the text sits in the middle of it vertically.Since there's only one line of text, this works perfectly for vertical centering. */
+        }
+        .ele1{
+            background-color: dodgerblue;
+            float: left;
+            height: 500px;
+            
+        }
+        .ele2{
+            background-color: orange;
+            float: right;
+            height: 200px;
+            
+        }
+        .ele3{
+            background-color: skyblue;
+            float: left;
+            width: 95%;
+            
+            
+        }
+        /* Why they're not overlapping?
+        Floats don't automatically overlap.
+
+        Floated elements only align side by side if enough space exists.
+
+        For real overlapping, use position: absolute with custom top / left. */
+    </style>
+</head>
+<body>
+    <!-- Allow element to float freely anywhere on the web-page is used to make photo gallerys, list of icons, horizontal menu etc 
+     
+    If you don't give the clear property then the elements will overlap or clutter ip with the existing floating elements-->
+     <div class="ele1">Wait</div>
+     <div class="ele2">Look</div>
+     <div class="ele3">Go</div>
+    <img src="../Assets/cleareg.jpg" alt="">
+     
+</body>
+</html>
