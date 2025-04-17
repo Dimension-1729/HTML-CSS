@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear-fix</title>
+    <style>
+        img{
+            width: 250px;
+            height: 250px;
+            float: left;
+        }
+        div{
+            border: 3px solid goldenrod;
+            width: 600px;
+        }
+        p{
+            padding: 1em;
+            float: left;
+        }
+        /* This will apply a small bit of hidden content as the parent container clears the float. */
+        div::after{
+            content: "";
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+        .large{
+            width: 900px;
+            height: 650px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../Assets/clearfix.jpg" alt="">
+        <img src="../Assets/clearfix_alt.jpg" alt="">
+        <p>"clearfix" approach uses ::after pseudo element, because it adds content after the element and avoids collapsing. By applying a small bit of hidden content.</p>
+    </div>    
+    <br />
+    <img class = "large"  src="../Assets/clearfix_ways.jpg" alt="">
+</body>
+</html>
