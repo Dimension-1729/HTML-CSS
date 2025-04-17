@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>block & inline</title>
+    <style>
+        .first{
+            width: 150px;
+            height: 150px;
+            border: 2px solid goldenrod;
+            background-color: yellowgreen;
+            line-height: 8em;
+            text-align: center;
+            display: none;
+        }
+        .second{
+            width: 150px;
+            height: 150px;
+            border: 2px solid goldenrod;
+            background-color: yellowgreen;
+            line-height: 8em;
+            text-align: center;
+            display: inline;
+        }
+        .fourth{
+            width: 150px;
+            height: 150px;
+            border: 2px solid goldenrod;
+            background-color: yellowgreen;
+            line-height: 8em;
+            text-align: center;
+            visibility: hidden;
+        }
+        .third{
+            width: 150px;
+            height: 150px;
+            border: 2px solid goldenrod;
+            background-color: yellowgreen;
+            line-height: 8em;
+            text-align: center;
+            display: inline-block;  /*but not when inline-block is used*/
+        }
+    /* display: none removes the element completely from the dom while visibility: hidden hides the element but not remove from the dom*/
+    </style>
 </head>
 <body>
     <img src="../Assets/inline.jpg" alt="">
+    <br />
+    <hr />
+    <div class="first">First Division</div> 
+    <div class="second">Second Division</div> 
+    <div class="fourth">Third Division</div> 
+    <div class="third">Third Division</div> 
+    
 </body>
 </html>
