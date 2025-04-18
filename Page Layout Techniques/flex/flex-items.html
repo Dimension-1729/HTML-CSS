@@ -9,38 +9,38 @@
             padding: 1em;
             background-color: goldenrod;
             margin: 1em;
-            height: 15vh;
-            font-size: x-large;
+            align-self: flex-end;
+           
         }
         .second{
             padding: 1em;
             background-color: hotpink;
             margin: 1em;
-            height: 7vh;
+            align-self: stretch;
+           
         }
         .third{
             padding: 1em;
             background-color: cornflowerblue;
             margin: 1em;
-            height: 13vh;
+            align-self: center;
+          
         }
         .fourth{
             padding: 1em;
             background-color: turquoise;
             margin: 1em;
-            height: 19vh;
+            flex-basis: 150px;
+            /* Why not we use just width here? because if the direction or axis changes of flex it will self adjust. */
+    
         }
         .wrapper{
             border: 2px solid dodgerblue;
             display: flex;
-            /* justify-content: left; */
-            /* flex-direction: row-reverse; */
-            /* flex-wrap: wrap; */
-            flex-flow: row-reverse wrap;
-            /* width: 50%; */
-            align-content: flex-end;
-            height: 15em;
-            justify-content: space-between;
+            height: 100vh;
+            align-items: flex-start;
+            flex-direction: column;
+        
                         
         }
     </style>
