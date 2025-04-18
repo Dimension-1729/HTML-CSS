@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex container</title>
+    <style>
+        .first{
+            padding: 1em;
+            background-color: goldenrod;
+            margin: 1em;
+        }
+        .second{
+            padding: 1em;
+            background-color: hotpink;
+            margin: 1em;
+        }
+        .third{
+            padding: 1em;
+            background-color: cornflowerblue;
+            margin: 1em;
+        }
+        .fourth{
+            padding: 1em;
+            background-color: turquoise;
+            margin: 1em;
+        }
+        .wrapper{
+            border: 2px solid dodgerblue;
+            display: flex;
+            /* justify-content: left; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            flex-flow: row-reverse wrap;
+            /* width: 50%; */
+            align-content: end;
+            height: 15em;
+            justify-content: space-between;
+                        
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="first">First</div>
+        <div class="second">Second</div>
+        <div class="third">Third</div>
+        <div class="fourth">Fourth</div>
+    </section>
+</body>
+</html>

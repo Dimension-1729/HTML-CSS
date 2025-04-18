@@ -1,0 +1,66 @@
+<!-- Grid layout has a upper hand compared with other layouts, as you won't be needing the float and positioning properties with grid layouts. -->
+
+<!-- The fraction unit -fr is specially made for grids. fr works only with the free space available inside the container and is also responsive and flexible  -->
+ 
+<!-- grid-gap : "gutters" are the lines between the columns and rows which separate each of the items -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Grids</title>
+ <style>
+     body{
+         background-color: #414141;
+     }
+     div{
+         border: 2px solid darkblue;
+         background-color: dodgerblue;
+         text-align: center;
+         padding: 15px;
+ 
+     }
+     .container{
+         display: grid;
+         grid-template-columns: repeat(4,2fr);
+         column-gap: 5px;
+         row-gap: 7px;
+         margin: 3em;
+         
+     }
+     .a{
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+     }
+     .c{
+        grid-row-start: 1;
+        grid-row-end: 4;
+     }
+     .e{
+        grid-row: 2 / 4;
+     }
+     .d{
+        grid-column: 3/ 5;
+     }
+     .f{
+        grid-column: span 2;
+     }
+     .h{
+        grid-column: span 3;
+     }
+ </style>
+</head>
+<body>
+ <section class="container">
+     <div class="a">A</div>
+     <div class="b">B</div>
+     <div class="c">C</div>
+     <div class="d">D</div>
+     <div class="e">E</div>
+     <div class="f">F</div>
+     <div class="g">G</div>
+     <div class="h">H</div>
+ </section>
+</body>
+</html>
