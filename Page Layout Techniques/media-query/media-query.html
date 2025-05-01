@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1{
+            color: burlywood;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.3rem;
+            letter-spacing: 1.1px;
+            line-height: 25px;
+            padding: 10px;
+        }
+
+        button{
+            font-size: 1.1rem;
+            padding: 5px;
+            width: 150px;
+            font-weight: 800;
+            background-color: deepskyblue;
+            font-family: cursive;
+            border-radius: 100px;
+                        
+        }
+        img{
+            margin-left: 250px;
+        }
+/*This below media query will be applied to all width below 450px  */
+        @media screen and (max-width:450px)
+        {
+        h1{
+            color: darkgoldenrod;
+            text-align: center;
+            }
+        p{
+            font-size: 0.8rem;
+            letter-spacing: 1.1px;
+            line-height: 25px;
+            padding: 10px;
+            text-align: center;
+            }
+
+        button{
+            font-size: 1.1rem;
+            padding: 5px;
+            width: 150px;
+            font-weight: 800;
+            background-color: greenyellow;
+            font-family: cursive;
+            border-radius: 100px;
+        }
+
+        img{
+            display: none;
+            }
+        
+        }
+        @media screen and (max-width:300px) {
+            h1{
+            color: skyblue;
+            text-align: center;
+            }
+            p{
+            font-size: 0.8rem;
+            letter-spacing: 1.1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 25px;
+            padding: 10px;
+            text-align: center;
+            }
+            
+        }    
+
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Media Query </h1>
+    <img src="../../Assets/bhalla.jpg" alt="" >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis rerum vero et, nostrum laborum, id corporis quam tempora nam nihil, nulla error enim quis unde. Quia in enim necessitatibus, fugiat ullam fugit molestias magnam saepe! Sit officiis voluptates quidem. Rerum excepturi placeat eligendi blanditiis animi accusantium! Dolorem, ipsam! Magnam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae architecto molestias optio repudiandae hic.</p>
+
+    <button type="button">Click Here</button>
+</body>
+</html>
