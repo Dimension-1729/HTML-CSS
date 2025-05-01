@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Containers</title>
+    <style>
+        body{
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .itemA{
+            padding: 2rem;
+            background-color: cadetblue;
+            margin: 10px;
+            height: 5vh;
+            font-size: xx-large;
+
+        }
+        .itemB{
+            padding: 2rem;
+            background-color: thistle;
+            margin: 10px;
+            height: 7vh;
+            font-size: 5rem;
+        }
+        .itemC{
+            padding: 2rem;
+            background-color: royalblue;
+            margin: 10px;
+            height: 12vh;
+            font-size: 7.5rem;
+        }
+        .itemD{
+            padding: 2rem;
+            background-color: burlywood;
+            margin: 10px;
+            height: 15vw;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-evenly;    /* aligns items on main axis */
+            align-items: baseline;  /*  aligns items cross axis */
+            border: 2px solid white;
+            height: 35rem;
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; */
+            /* Flex-flow shorthand property for flex-direction flex-wrap */
+            flex-flow: row-reverse wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="itemA">A</div>
+        <div class="itemB">B</div>
+        <div class="itemC">C</div>
+        <div class="itemD">D</div>
+    </section>
+</body>
+</html>

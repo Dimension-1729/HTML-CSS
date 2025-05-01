@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Containers</title>
+    <style>
+        body{
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .itemA{
+            padding: 2rem;
+            background-color: cadetblue;
+            margin: 10px;
+            align-self: center;
+           
+
+        }
+        .itemB{
+            padding: 2rem;
+            background-color: thistle;
+            margin: 10px;
+            /* Why use flex-basis and not width because when flex-direction is changes this setting will be auto applied to the element */
+            flex-basis: 15rem;
+            
+        }
+        .itemC{
+            padding: 2rem;
+            background-color: royalblue;
+            margin: 10px;
+            align-self: stretch;
+           
+        }
+        .itemD{
+            padding: 2rem;
+            background-color: burlywood;
+            margin: 10px;
+            
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-evenly;    
+            align-items: flex-start;  
+            border: 2px solid white;
+            height: 35rem;
+            /* flex-direction: column; try this for flex-basis*/
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="itemA">A</div>
+        <div class="itemB">B</div>
+        <div class="itemC">C</div>
+        <div class="itemD">D</div>
+    </section>
+</body>
+</html>
