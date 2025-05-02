@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Method Assignment</title>
+    <style>
+        body{
+            background-color: #414141;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: xx-large;
+            font-weight: bold;
+            perspective: 1000px;
+        }    
+
+        .cube{
+            line-height: 100px;
+            margin: 100px 0 0 350px;
+            /* This specifies how elements/nested elements should be displayed in 3D space */
+            transform-style: preserve-3d;
+            transition: 1.55s;
+            
+        }
+
+        .front{
+            transform: translateZ(100px); /*to make it appear closer*/
+            padding: 100px;
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1px;
+
+        }
+        .back{
+            transform: rotateX(-90deg) translateZ(-148px); /* This sends back to the back side of front div. Translate to make it upwards towards Z axis, otherwise it will keep appearing below the front div */
+            padding: 100px;
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .cube:hover{
+            transform: rotateX(90deg); /*This will bring back div to front on hover*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="front">Front</div>
+        <div class="back">Back</div>
+    </div>
+</body>
+</html>

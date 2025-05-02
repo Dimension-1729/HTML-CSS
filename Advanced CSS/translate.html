@@ -1,0 +1,54 @@
+<!--
+Repositions the elemenet in horizontal and vertical directions
+Hierarchial order of elements matters when applying any tranformation
+z-axis moves the elment closer to you  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        .t2d{
+            padding: 10px;
+            background-color: skyblue;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3rem;
+            font-style: oblique;
+            margin-top: 100px;
+            /* rotate: -0.5rad; */
+            /* transform: translate(20px,35px); */
+            transform: rotate3d(0,0,-1,35deg);
+              /* or use rotate3d(x,y,z,rotation) 
+            the values for rotation should be kept b/w 0 and 1. */
+
+
+        }
+        .t3d{
+            padding: 10px;
+            background-color: burlywood;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3rem;
+            font-style: oblique;
+            margin-top: 350px;
+            transform: perspective(200px) translate3d(25px,-25px,-55px) rotateX(25deg) rotateZ(25deg);
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="t2d">2D-Transformation</div>
+    <div class="t3d">3D-Transformation</div>
+
+<br />
+<br />
+<br />
+<br />
+<hr />
+<img src="../Assets/transform_functions.jpg" alt="">
+<img src="../Assets/perspective.jpg" alt="">
+<img src="../Assets/perspective_inaction.jpg" alt="">
+</body>
+</html>
