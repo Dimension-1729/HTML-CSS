@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Function</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: 5px solid black;
+            text-align: center;
+            margin-top: 45px;
+            line-height: 100px;  
+           
+        }
+        .ele1{
+            background-color: dodgerblue;
+            /* This will scale on x axis, - here will flip it on Y axis*/
+            transform: scale(2,-2); 
+            margin: 100px 0 10px 150px;
+           
+        }
+        .ele2{
+            background-color: orange;
+            transform: scaleY(2);
+            
+        }
+        .ele3{
+            background-color: skyblue;
+            /* To see visually z-axis scale3d function we added rotate and perspective to visualize it fully */
+            transform: perspective(200px) scale3d(2,3,6) rotate3d(2,5,3,30deg);
+            float: right;
+            margin-right: 150px;
+            
+            
+        }
+        p{
+            padding: 50px;
+            line-height: 50px;
+            margin: 0 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Allow element to float freely anywhere on the web-page is used to make photo gallerys, list of icons, horizontal menu etc -->
+     <div class="ele1">Wait</div>
+ 
+     <div class="ele2">Look</div>
+    
+     <div class="ele3">Go</div>
+     
+     <br /> <hr />
+</body>
+</html>

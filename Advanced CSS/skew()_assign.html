@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: grid;
+            /* Can only use place-content if we use display as grid */
+            place-content: center;
+            min-height: 100vh;
+
+        }
+
+        h1{
+            font-size: 3rem;
+            color: gold;
+            padding: 2rem 4rem;
+            background-color: midnightblue;
+            transform: rotate(-15deg) skew(-15deg);
+        }
+
+        span{
+            display: inline-block;
+            letter-spacing: -0.2rem;
+            text-shadow: 10px 15px 5px black;
+            transition: 0.5s;
+        }
+
+        span:hover{
+            letter-spacing: 0rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <span>Best CSS Tutorial</span>
+    </h1>
+</body>
+</html>
