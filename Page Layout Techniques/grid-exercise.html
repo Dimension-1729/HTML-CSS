@@ -30,22 +30,29 @@
      }
     .a{
         grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-end: 6;
     }
     .b{
-        grid-row: 2 / span 4;
+        grid-row: 2 / span 2;
     }
     .c{
-        grid-row: 2/ span 4;
+        grid-column: 2/ span 3;
     }
     .d{
-        grid-row: 2/ span 3;
+        grid-row: span 1;
+    }
+    .e{
+        grid-row: span 1;
+    }
+    .h{
+        grid-row: span 1;
     }
     .f{
-        grid-row: 2/ span 4;
+        grid-column: 5/ span 1;
+        grid-row: 2/ span 2;
     }
     .g{
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 5;
     }
  </style>
 </head>
@@ -53,9 +60,10 @@
  <section class="container"> 
      <div class="a">Header</div>
      <div class="b">Menu</div>
-     <div class="c">sub</div>
+     <div class="c">Main Content</div>
      <div class="d">sub</div>
      <div class="e">sub</div>
+     <div class="h">sub</div>
      <div class="f">Sidebar</div>
      <div class="g">Footer</div>
 
