@@ -1,0 +1,54 @@
+<!-- 
+transition short hand property
+transition: property duration timing-function delay;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 700;
+            transition: all 1s;
+        }
+        /* Why it was not working before, if you use div here.....
+        The reason your .box div is not centrally aligned on the page is that you applied display: flex to the .box itself and also globally to all div elements — but you never created a container that centers it using flex.
+        This targets all divs, including .box, and makes each of them a flex container, not a flex item.
+
+        But there is no parent div or container that centers .box within the <body>. */
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            height: 95vh;
+            align-items: center;
+        }
+        .box:hover{
+            color: white;
+            background-color: orange;
+            border-radius: 50%;
+            transition: all 1s;
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box">Clockwise Rotation</div>
+</div>
+</body>
+</html>
