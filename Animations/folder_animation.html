@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            position: relative;
+            margin: 200px 50px;
+        }
+        .folder1{
+            position: absolute;
+            left: 0;
+            z-index: 2;
+        }
+        .folder2{
+            position: absolute;
+            right: 0;
+            z-index: 2;
+        }
+        .file{
+            position: absolute;
+            left: 50px;
+            z-index: 1;
+            animation: file_transfer 2s infinite ease-out;
+            
+
+        }
+        @keyframes file_transfer {
+            5%{
+                transform: translate(0px,-60px);
+                
+            }
+            20%{
+                transform: translateX(60px,-90px) rotate(90deg);
+                
+            }
+            35%{
+                transform: translate(100px,-60px) rotateY(35deg) skewX(35deg);
+                
+            }
+            50%{
+                transform: translate(500px, -60px) skewX(25deg);
+                
+            }
+            65%{
+                transform: translate(500px, 0px);
+            }
+            80%{
+                transform: translate(500px, -60px) skewY(15deg);
+            }
+            100%{
+                transform: translate(0px, -60px);
+            }
+            
+
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <img src="../Assets/yellow-mac-folder-13660.png" alt="" class="folder1" width="100px">
+        <img src="../Assets/yellow-mac-folder-13660.png" alt="" class="folder2" width="100px">
+        <img src="../Assets/file-1500.png" alt="" class="file" width="50">
+    </div>
+</body>
+</html>

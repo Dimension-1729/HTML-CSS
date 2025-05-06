@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .wrapper{
+            position: relative;
+            margin: 100px 100px;
+        }
+
+        img{
+            position: absolute;
+            left: 250px;
+            top: 300px;
+            animation: boomer 2s linear infinite;
+        }
+
+        @keyframes boomer {
+            0%{
+                transform: scale(0px);
+            }
+            25%{
+                transform: scale(0.5) rotate(180deg) translateY(100px);
+                
+            }
+            50%{
+                transform: scale(0.5) rotate(270deg) translateY(80px);
+                
+            }
+            65%{
+                transform: scale(0.5) rotate(360deg) translateY(300px);
+                
+            }
+            75%{
+                transform: scale(0.5) rotate(480deg) translateY(100px);
+                
+            }
+            100%{
+                transform: scale(0.5) rotate(680deg) translateX(100px);
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="../Assets/boomerang-icon-f96bdf.png" alt="" width="150px">
+    </div>
+</body>
+</html>
