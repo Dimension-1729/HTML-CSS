@@ -1,0 +1,48 @@
+<!-- style and property change happening on the element ~ animation
+ Keyframes take care of what styles to apply on the element at a certain time duration
+ Css animations do not require a property change unlike transitions to trigger the animation, they can begin at any time
+  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & Use of Frame Selectors</title>
+    <style>
+        body{
+            background-color: #111;
+        }
+        .box{
+            margin: 100px 400px;
+            width: 100px;
+            height: 100px;
+            background-color: olivedrab;
+            animation: slidebox 10s;
+        }
+        @keyframes slidebox{
+            0%{
+                transform: translate(0px);
+            }
+            25%{
+                transform: translateY(400px) rotate(90deg);
+                background-color: dodgerblue;
+            }
+            50%{
+                transform: translateY(0px) rotate(180deg);
+                background-color: aqua;
+            }
+            75%{
+                transform: translateX(200px) rotate(270deg);
+                background-color: green;
+            }
+            100%{
+                transform: translateX(0px) rotate(180deg);
+                background-color: goldenrod;
+            }
+        }
+    </style>
+ </head>
+ <body>
+    <div class="box"></div>
+ </body>
+ </html>

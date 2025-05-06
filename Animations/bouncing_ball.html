@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        img{
+            margin: 200px 450px;
+            animation: bounce 500ms infinite;
+        }
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px);
+            }
+            15%{
+                transform: translateY(50px) rotate(480deg);
+            }
+            30%{
+                transform: translateY(100px) rotate(480deg);
+            }
+            50%{
+                transform: translateY(150px) rotate(480deg);
+            }
+            75%{
+                transform: translateY(500px) rotate(480deg);
+            }
+            100%(
+                transform: translateY(0px) rotate(480deg);
+            )
+
+        }
+    </style>
+</head>
+<body>
+    <div class="basketball">
+        <img src="../Assets/vecteezy_basketball-with_26771748.png" alt="" width="150px">
+    </div>
+</body>
+</html>
