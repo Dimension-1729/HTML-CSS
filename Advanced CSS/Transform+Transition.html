@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition with transform</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container{
+            display: inline-block;
+            width: 250px;
+            height: 150px;
+            margin-left: 30px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+            
+
+           
+        }
+        img{
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            left: 0;
+            background-position: center;
+            transition: all 0.7s ease;
+
+        }
+
+        img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .title{
+            position: absolute; 
+            width: 170px;
+            left: 40px;
+            top: 15px;
+            font-weight: 700;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: black;
+            transition: top 0.4s ease, text-shadow 0.4s linear, color 0.4s ease;
+        }
+
+        .container{
+            top: 0px;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../Assets/pexels-andreimike-1271619.jpg" alt="">
+        <p class="title">The Journey Begins</p>
+        <div class="button">
+            <a href="">Explore More</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="../Assets/pexels-mihirjadhav03-1752417.jpg" alt="">
+        <p class="title">The Journey Begins</p>
+        <div class="button">
+            <a href="">Explore More</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="../Assets/pexels-ozgomz-868097.jpg" alt="">
+        <p class="title">The Journey Begins</p>
+        <div class="button">
+            <a href="">Explore More</a>
+        </div>
+    </div>
+    <div class="container">
+        <img src="../Assets/pexels-sanmane-1365425.jpg" alt="">
+        <p class="title">The Journey Begins</p>
+        <div class="button">
+            <a href="">Explore More</a>
+        </div>
+    </div>
+</body>
+</html>

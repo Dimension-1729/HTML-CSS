@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition speed and time</title>
+    <style>
+        body{
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80vw;
+            border: 2px solid gray;
+            padding: 15px;
+            background-color: grey;
+            border-radius: 50px;
+            margin: 30px auto;
+            
+        }
+        .box{
+            width: 25px;
+            height: 25px;
+            padding: 60px;
+            background-color: orange;
+            border-radius: 100px;
+            /* transition-timing-function: cubic-bezier(0.9,0.7,0.5,1); */
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+        }
+        .container:hover .box{
+            /* margin-left: 80%; */
+            width: 80%;
+            transition-delay: -2s;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
